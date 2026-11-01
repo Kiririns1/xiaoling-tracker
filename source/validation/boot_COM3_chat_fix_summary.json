@@ -1,0 +1,22 @@
+{
+  "version": true,
+  "version_name": "3.1.1-chat-audio-fix",
+  "audio_ready": true,
+  "cloud_connected": true,
+  "agora_connected": true,
+  "http_ready": true,
+  "camera_frames": false,
+  "crash": false,
+  "provisioning": false,
+  "ip_addresses": [
+    "192.168.4.1"
+  ],
+  "observed_seconds": 100,
+  "ordinary_chat_routes": 3,
+  "playback_started": 2,
+  "playback_failed": 1,
+  "serial_closed": true,
+  "saved_wifi_log_seen": false,
+  "wifi_reconnected_without_provisioning": true,
+  "camera_driver_ready": false
+}

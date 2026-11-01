@@ -1,0 +1,14 @@
+{
+  "version": true,
+  "audio_ready": true,
+  "cloud_connected": false,
+  "agora_connected": false,
+  "http_ready": false,
+  "camera_frames": false,
+  "crash": false,
+  "provisioning": true,
+  "saved_wifi": false,
+  "ip_addresses": [],
+  "observed_seconds": 60,
+  "serial_closed": true
+}

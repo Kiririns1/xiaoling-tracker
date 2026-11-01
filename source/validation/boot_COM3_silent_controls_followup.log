@@ -1,0 +1,61 @@
+[070265]<I> dialog=speaking
+[070393]<I> tts playback started generation=34
+[070487]<I> tts final=0 text=[redacted]
+I (71497) fresh_camera: decoded=1941 fps=30.0
+[071681]<I> dialog=silent
+[071689]<E> tts playback failed generation=34 code=-6
+[071693]<W> tts playback failed while waiting code=-6
+[071698]<W> tts playback ended with error code=-6; continue resource handoff
+I (72412) tracker_dialog: local reply ret=0
+I (76504) fresh_camera: decoded=2090 fps=29.8
+I (81504) fresh_camera: decoded=2239 fps=29.8
+[085194]<I> {"ready":true,"mode":"gesture_step","revision":4,"boot_id":2565362420,"tracking_enabled":true,"tracking_mode":"face","tracking_revision":3,"busy":false,"fault":false,"phase":"idle","audio_busy":false,"hand_follow_style":"facetracker-dual-step-v1","hand_follow_axes":"yaw_pitch","hand_follow_supported":true,"face_follow_supported":true,"face_follow_axes":"yaw_pitch","fist_nod_supported":true,"hand_follow_active":false,"hand_follow_locked":false,"fist_nod_speed":0.025,"fist_nod_stroke_ms":300,"fist_nod_pause_ms":200,"follow_pulse_us":75,"follow_step_ms":100,"follow_pause_ms":200,"yaw_speed":0.000,"pitch_speed":0.000,"yaw_gpio":5,"pitch_gpio":6,"feedback_mode":"timed","return_verified":false,"posture_enabled":true,"posture_calibration":1,"posture_query":0,"posture_rotation":0,"posture_exit":0}
+[085262]<I> camera ready=1
+# /camera
+I (86504) fresh_camera: decoded=2384 fps=29.0
+[086244]<I> dialog=thinking
+[086863]<I> dialog=speaking
+[086984]<I> tts playback started generation=38
+[087404]<I> tts final=0 text=[redacted]
+[090268]<I> dialog=silent
+[090285]<E> tts playback failed generation=38 code=-6
+[090289]<W> tts playback failed while waiting code=-6
+[090289]<W> tts playback ended with error code=-6; continue resource handoff
+I (90999) tracker_dialog: local reply ret=0
+I (91504) fresh_camera: decoded=2532 fps=29.6
+[092282]<I> dialog=listening
+[092502]<I> asr final=0 text=[redacted]
+[092530]<I> asr final=0 text=[redacted]
+[093210]<I> asr final=0 text=[redacted]
+I (94712) tracker_dialog: control=posture_status accepted=1 muted=0
+[094004]<I> asr final=1 text=[redacted]
+[094006]<I> dialog=thinking
+I (96507) fresh_camera: decoded=2682 fps=30.0
+[095892]<I> dialog=speaking
+[096008]<I> tts playback started generation=43
+[096463]<I> tts final=0 text=[redacted]
+[099656]<I> dialog=silent
+[099670]<E> tts playback failed generation=43 code=-6
+[099670]<W> tts playback failed while waiting code=-6
+[099672]<W> tts playback ended with error code=-6; continue resource handoff
+I (100387) tracker_dialog: local reply ret=0
+[100786]<I> dialog=thinking
+I (101511) fresh_camera: decoded=2832 fps=30.0
+[101262]<I> dialog=speaking
+[101416]<I> tts playback started generation=47
+[101542]<I> tts final=0 text=[redacted]
+[103271]<I> dialog=silent
+[103282]<E> tts playback failed generation=47 code=-6
+[103286]<W> tts playback failed while waiting code=-6
+[103287]<W> tts playback ended with error code=-6; continue resource handoff
+I (104002) tracker_dialog: local reply ret=0
+I (106514) fresh_camera: decoded=2981 fps=29.8
+I (111514) fresh_camera: decoded=3123 fps=28.4
+[111117]<I> dialog=listening
+[111330]<I> asr final=0 text=[redacted]
+[111350]<I> asr final=0 text=[redacted]
+[112032]<I> asr final=0 text=[redacted]
+[112410]<I> dialog=thinking
+[113065]<I> dialog=speaking
+[113184]<I> tts playback started generation=52
+[113603]<I> tts final=0 text=[redacted]

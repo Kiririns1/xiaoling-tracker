@@ -1,0 +1,7 @@
+Assertion failed: handle->audio.stream_accepting, file C:\Users\kiririns\Documents\ChatGPT\hack\Xiaoling_Tracker_LJYD\qumios-dev\components\qm_agent\tests\test_audio.c, line 791
+Traceback (most recent call last):
+  File "C:\Users\kiririns\Documents\ChatGPT\hack\Xiaoling_Tracker_LJYD\tools\test_audio_recovery.py", line 35, in <module>
+    subprocess.run([str(exe)], check=True)
+  File "C:\Users\kiririns\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Users\\kiririns\\AppData\\Local\\Temp\\tmpnsbarrqg\\audio_0.exe']' returned non-zero exit status 3221226505.

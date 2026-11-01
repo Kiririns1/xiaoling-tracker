@@ -1,0 +1,6 @@
+--flash_mode dio --flash_freq 80m --flash_size detect
+0x0 bootloader/bootloader.bin
+0x20000 xiaoling_11885.bin
+0x10000 partition_table/partition-table.bin
+0x1d000 ota_data_initial.bin
+0x1f000 phy_init_data.bin

@@ -1,0 +1,156 @@
+{
+  "version": "3.1.2-silent-controls",
+  "pid": 11885,
+  "source_baseline": "C:/Users/kiririns/Desktop/hack/final/FINAL",
+  "credentials": "Local PID11885 configuration retained; source archive redacted.",
+  "platform_agent": {
+    "id": 2854,
+    "version": 4,
+    "binding_evidence": "Previous release UI evidence only; current browser inspection stopped because URL could not be identified reliably. No cloud configuration changed."
+  },
+  "validation": {
+    "esp_idf_build": "passed",
+    "idf_version": "5.4.1",
+    "partition_size": "passed, 52% free",
+    "pc_unittests": 82,
+    "intent_cases": 47,
+    "actual_motion_state_machine": "passed with fake time/PWM, including posture transitions and complete JSON at maximum counters",
+    "actual_dialog_and_light": "Passed: actual C silent controls and worker handoff cancellation, prior brightness/dedup/wake behavior.",
+    "serial_port_accessed": true,
+    "flashed": true,
+    "hardware_acceptance": "3.1.2 app-only flash/hash passed; startup confirms correct version, audio, cloud/Agora and HTTP ready, no observed panic. Reconnected passive log shows live camera frames, face tracking mode, posture_enabled=true and calibration counter=1. Initial serial observation interrupted; 45.2s follow-up succeeded. Quiet-control/re-wake user confirmation pending. User subsequently confirmed silent commands execute and voice resumes on re-wake.",
+    "python_syntax": "passed",
+    "flash_port": "COM3",
+    "flash_images_verified": 1,
+    "camera_driver_ready": true,
+    "audio_recovery": "Real SDK suite passed with decoder=0 and 1; failure reproduced before fix; two subsequent turns, cleanup race, closed capture tested",
+    "flash_mode": "application only at 0x20000",
+    "ordinary_chat_hardware_acceptance": "Historical 3.1.1 user acceptance: two ordinary chat replies audible. 3.1.2 host gate and SDK audio regression passed; current hardware follow-up pending.",
+    "silent_controls": "Actual C regression reproduced before fix, then passed: quiet command execution, face-follow preservation, posture controls, silent notifications, wake recovery, mute races and ASR cancellation cleanup.",
+    "boot": {
+      "version": true,
+      "version_name": "3.1.2-silent-controls",
+      "audio_ready": true,
+      "cloud_connected": true,
+      "agora_connected": true,
+      "http_ready": true,
+      "camera_frames": true,
+      "camera_driver_ready": true,
+      "crash": false,
+      "serial_closed": true,
+      "observation": "Initial boot collection interrupted by serial GetOverlappedResult access error; reconnect was visible. Follow-up passive collection 45.2s completed without error.",
+      "followup_seconds": 45.2,
+      "muted_controls_accepted": [],
+      "mute_and_rewake_observed": false,
+      "playback_starts_while_muted": 0,
+      "last_control_state": {
+        "ready": true,
+        "mode": "gesture_step",
+        "revision": 4,
+        "boot_id": 2565362420,
+        "tracking_enabled": true,
+        "tracking_mode": "face",
+        "tracking_revision": 3,
+        "busy": false,
+        "fault": false,
+        "phase": "idle",
+        "audio_busy": false,
+        "hand_follow_style": "facetracker-dual-step-v1",
+        "hand_follow_axes": "yaw_pitch",
+        "hand_follow_supported": true,
+        "face_follow_supported": true,
+        "face_follow_axes": "yaw_pitch",
+        "fist_nod_supported": true,
+        "hand_follow_active": false,
+        "hand_follow_locked": false,
+        "fist_nod_speed": 0.025,
+        "fist_nod_stroke_ms": 300,
+        "fist_nod_pause_ms": 200,
+        "follow_pulse_us": 75,
+        "follow_step_ms": 100,
+        "follow_pause_ms": 200,
+        "yaw_speed": 0.0,
+        "pitch_speed": 0.0,
+        "yaw_gpio": 5,
+        "pitch_gpio": 6,
+        "feedback_mode": "timed",
+        "return_verified": false,
+        "posture_enabled": true,
+        "posture_calibration": 1,
+        "posture_query": 0,
+        "posture_rotation": 0,
+        "posture_exit": 0
+      }
+    },
+    "silent_controls_hardware_acceptance": "User confirmed actual face tracking -> stop chatting -> posture/calibration while silent -> wake sequence: commands execute while muted, voice resumes on wake."
+  },
+  "online_wake_standby": true,
+  "microphone_upload_during_standby": true,
+  "hardware": {
+    "yaw_gpio": 5,
+    "pitch_gpio": 6,
+    "ws2812_gpio": 7,
+    "led_count": 8
+  },
+  "new_features": [
+    "posture voice controls",
+    "posture status and calibration requests synchronized with PC",
+    "posture abnormality cloud speech and three amber flashes",
+    "rotate screen and exit PC by voice"
+  ],
+  "images": {
+    "0x0": {
+      "file": "bootloader/bootloader.bin",
+      "bytes": 21312,
+      "sha256": "4aa72fd71015acb7b68892678398cfe5ce23d30fa552b5b28ea78b5dda8d3fb8"
+    },
+    "0x10000": {
+      "file": "partition_table/partition-table.bin",
+      "bytes": 3072,
+      "sha256": "4c6a4099e941af88e0967062e92253e468c780843b2ecd2ecb7feb49eafdc8c9"
+    },
+    "0x1d000": {
+      "file": "ota_data_initial.bin",
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    },
+    "0x1f000": {
+      "file": "phy_init_data.bin",
+      "bytes": 144,
+      "sha256": "6ab5d4967e217525a869b23b4a6cb737bed91ca56d793d58474d168464eec1dd"
+    },
+    "0x20000": {
+      "file": "xiaoling_11885.bin",
+      "bytes": 1982128,
+      "sha256": "c8fdf9a08f71084f7d1837acdc3ecca99055ba3e2d0e4ec7d9950c73df4becf8"
+    }
+  },
+  "backup": "backups/COM3_before_silent_controls_boot_config.bin",
+  "previous_layout": "Arduino partition table at 0x8000; complete five-image layout migration required; old Wi-Fi is not carried over automatically",
+  "pc_startup_fix": {
+    "issue": "Setup ran in source directory; extracted deliverables copy could not find that environment.",
+    "change": "Launcher probes local and containing same-project environments; explicit PythonPath takes precedence; setup_pc.cmd added.",
+    "validation": "Windows PowerShell 5.1 extracted-copy CheckOnly passed; imports cv2 4.11.0, mediapipe 0.10.21, numpy 1.26.4.",
+    "firmware_changed": false
+  },
+  "chat_audio_fix": {
+    "cause": "After a terminal playback error, stream_accepting stayed false. Custom local replies explicitly reopen; ordinary RTC conversation does not.",
+    "change": "Reopen only on next listening/thinking turn after cleanup and while connected/capture open; preserve rejection of stale tail packets.",
+    "pre_flash_config_backup": "backups/COM3_before_chat_fix_boot_config.bin",
+    "flash_mode": "app only, preserve NVS/partition table/OTA selection",
+    "user_confirmation": "两轮都有语音",
+    "historical_user_confirmation_version": "3.1.1-chat-audio-fix"
+  },
+  "silent_controls": {
+    "voice_only_mute": true,
+    "commands_require_wake": false,
+    "acknowledgements_and_notifications_muted": true,
+    "tracking_and_posture_tasks_preserved": true,
+    "wake_restores_speech": true,
+    "cloud_camera_and_pomodoro_commands_accepted_while_muted": true,
+    "asr_upload_resumed_after_reply_handoff_cancel": true,
+    "pre_flash_backup": "backups/COM3_before_silent_controls_boot_config.bin",
+    "user_confirmation": "静音时能执行，唤醒后恢复语音"
+  },
+  "original_full_backup": "backups/COM3_before_FINAL_20261101.bin"
+}

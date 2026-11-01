@@ -1,0 +1,45 @@
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+I (27) boot: ESP-IDF bebdc8020 2nd stage bootloader
+I (27) boot: compile time Nov  1 2026 00:26:08
+I (27) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (30) boot: efuse block revision: v1.4
+I (49) boot: Enabling RNG early entropy source...
+I (54) boot: Partition Table:
+I (57) boot: ## Label            Usage          Type ST Offset   Length
+I (63) boot:  0 nvs              WiFi data        01 02 00011000 0000c000
+I (69) boot:  1 otadata          OTA data         01 00 0001d000 00002000
+I (76) boot:  2 phy_init         RF data          01 01 0001f000 00001000
+I (82) boot:  3 ota_0            OTA app          00 10 00020000 003f0000
+I (89) boot:  4 ota_1            OTA app          00 11 00410000 003f0000
+I (95) boot:  5 model            Unknown data     01 82 00800000 00010000
+I (102) boot:  6 coco_pose        Unknown data     01 40 00810000 00320000
+I (109) boot:  7 spiffs_data      Unknown data     01 82 00b30000 00100000
+I (115) boot:  8 lvgl             Unknown data     01 82 00c30000 00300000
+I (122) boot: End of partition table
+I (450) boot: Loaded app from partition at offset 0x20000
+I (450) boot: Disabling RNG early entropy source...
+I (646) app_init: Application information:
+I (646) app_init: Project name:     xiaoling_11885
+I (651) app_init: App version:      3.1.0-posture-ljyd
+I (656) app_init: Compile time:     Nov  1 2026 09:56:42
+I (661) app_init: ELF file SHA256:  ebcfd2372...
+I (665) app_init: ESP-IDF:          bebdc8020
+I (753) main_task: Started on CPU0
+I (902) spi_cam: Initializing SPI interface
+I (902) fresh_camera: BF3901 original 22:29 register table loaded
+[000271]<E> system KV get failed ret=-1 key=volume key_len=6
+[000275]<I> qm_audio ready, opus 20ms
+[000285]<E> system KV get failed ret=-1 key=course_cfg key_len=10
+[000303]<E> system KV get failed ret=-1 key=cloud/env key_len=9
+[000309]<E> system KV get failed ret=-1 key=cloud/pair_once key_len=15
+[000315]<E> system KV get failed ret=-1 key=wifi_cfg key_len=8
+[000321]<I> no saved Wi-Fi: start BLE provisioning
+[000769]<I> ble provision start ret=0
+[000797]<I> state idle -> ready
+[000797]<I> session created state=ready
+I (1501) main_task: Returned from app_main()
+[001382]<I> opus ready 16000 Hz mono 20 ms frame=640 bytes
+[029392]<I> {"ready":true,"mode":"gesture_step","revision":1,"boot_id":312810830,"tracking_enabled":false,"tracking_mode":"hand","tracking_revision":1,"busy":false,"fault":false,"phase":"idle","audio_busy":false,"hand_follow_style":"facetracker-dual-step-v1","hand_follow_axes":"yaw_pitch","hand_follow_supported":true,"face_follow_supported":true,"face_follow_axes":"yaw_pitch","fist_nod_supported":true,"hand_follow_active":false,"hand_follow_locked":false,"fist_nod_speed":0.025,"fist_nod_stroke_ms":300,"fist_nod_pause_ms":200,"follow_pulse_us":75,"follow_step_ms":100,"follow_pause_ms":200,"yaw_speed":0.000,"pitch_speed":0.000,"yaw_gpio":5,"pitch_gpio":6,"feedback_mode":"timed","return_verified":false,"posture_enabled":false,"posture_calibration":0,"posture_query":0,"posture_rotation":0,"posture_exit":0}
+[029452]<I> camera ready=1
+# /camera

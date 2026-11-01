@@ -1,0 +1,23 @@
+{
+  "version": false,
+  "version_name": "3.1.2-silent-controls",
+  "audio_ready": false,
+  "cloud_connected": false,
+  "agora_connected": false,
+  "http_ready": false,
+  "camera_frames": true,
+  "crash": false,
+  "provisioning": false,
+  "saved_wifi": false,
+  "ip_addresses": [],
+  "observed_seconds": 45.2,
+  "monitor_error": null,
+  "ordinary_chat_routes": 0,
+  "playback_started": 5,
+  "playback_failed": 4,
+  "serial_closed": true,
+  "mute_seen": false,
+  "muted_controls_accepted": [],
+  "playback_starts_while_muted": 0,
+  "wake_after_mute": false
+}

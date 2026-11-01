@@ -1,0 +1,16 @@
+# Generated local environments and caches
+**/.venv/
+**/.venv-xiaoling/
+**/__pycache__/
+**/*.pyc
+**/.mpl-cache/
+**/.pip-cache/
+**/build/
+**/backups/
+**/.env
+**/.env.*
+**/secret.local.h
+**/private.local.h
+runtime/**/validation/
+# Keep release ZIP outside Git; upload it as a Release asset.
+/*.zip

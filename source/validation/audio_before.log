@@ -1,0 +1,46 @@
+[779018]<I> dialog=listening
+[779230]<I> asr final=0 text=[redacted]
+[779254]<I> asr final=0 text=[redacted]
+[779989]<I> asr final=1 text=[redacted]
+[779990]<I> dialog=thinking
+[779990]<I> local interrupt queued audio reopen
+[779992]<I> abort output ret=-6
+[781140]<I> agora event user_mute_audio conn_id=1 uid=100 muted=1
+[781787]<I> agora event user_mute_audio conn_id=1 uid=100 muted=0
+[781788]<I> dialog=speaking
+[781866]<I> tts final=0 text=[redacted]
+[781915]<I> tts playback started generation=110
+[782783]<I> dialog=silent
+[782796]<E> tts playback failed generation=110 code=-6
+[782796]<W> tts playback failed while waiting code=-6
+[782799]<W> tts playback ended with error code=-6; continue resource handoff
+I (783514) tracker_dialog: local reply ret=0
+[785749]<I> dialog=listening
+[785962]<I> asr final=0 text=[redacted]
+[785993]<I> asr final=0 text=[redacted]
+[786683]<I> asr final=0 text=[redacted]
+[787367]<I> asr final=1 text=[redacted]
+[787367]<I> dialog=thinking
+[787368]<I> local interrupt queued audio reopen
+[787370]<I> abort output ret=-6
+[788431]<I> agora event user_mute_audio conn_id=1 uid=100 muted=1
+[789102]<I> agora event user_mute_audio conn_id=1 uid=100 muted=0
+[789115]<I> dialog=speaking
+[789235]<I> tts playback started generation=114
+[789279]<I> tts final=0 text=[redacted]
+[790703]<I> dialog=silent
+[790717]<E> tts playback failed generation=114 code=-6
+[790717]<W> tts playback failed while waiting code=-6
+[790721]<W> tts playback ended with error code=-6; continue resource handoff
+I (791436) tracker_dialog: local reply ret=0
+[805151]<I> dialog=listening
+[805410]<I> asr final=0 text=[redacted]
+[805473]<I> asr final=0 text=[redacted]
+[806117]<I> asr final=0 text=[redacted]
+[806377]<I> asr final=1 text=[redacted]
+[806377]<I> dialog=thinking
+[807871]<I> dialog=speaking
+[807906]<I> tts final=0 text=[redacted]
+[808344]<I> tts final=0 text=[redacted]
+[808885]<I> tts final=0 text=[redacted]
+[809592]<I> tts final=0 text=[redacted]

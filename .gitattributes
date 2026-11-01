@@ -1,0 +1,7 @@
+# Preserve the bytes of the original program and scripts.
+* -text
+*.bin binary
+*.a binary
+*.task binary
+*.onnx binary
+*.tar binary

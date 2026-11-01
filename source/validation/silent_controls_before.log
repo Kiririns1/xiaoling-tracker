@@ -1,0 +1,7 @@
+Assertion failed: selection==0&&!tracker_dialog_awake()&&!tracker_dialog_audio_allowed(), file C:\Users\kiririns\AppData\Local\Temp\tmpodczw8mo\dialog.c, line 200
+Traceback (most recent call last):
+  File "C:\Users\kiririns\Documents\ChatGPT\hack\Xiaoling_Tracker_LJYD\tools\test_dialog_light.py", line 85, in <module>
+    subprocess.run([str(exe)],check=True)
+  File "C:\Users\kiririns\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Users\\kiririns\\AppData\\Local\\Temp\\tmpodczw8mo\\dialog.exe']' returned non-zero exit status 3221226505.

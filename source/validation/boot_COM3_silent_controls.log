@@ -1,0 +1,130 @@
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+I (27) boot: ESP-IDF bebdc8020 2nd stage bootloader
+I (27) boot: compile time Nov  1 2026 00:26:08
+I (27) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (30) boot: efuse block revision: v1.4
+I (49) boot: Enabling RNG early entropy source...
+I (54) boot: Partition Table:
+I (57) boot: ## Label            Usage          Type ST Offset   Length
+I (63) boot:  0 nvs              WiFi data        01 02 00011000 0000c000
+I (69) boot:  1 otadata          OTA data         01 00 0001d000 00002000
+I (76) boot:  2 phy_init         RF data          01 01 0001f000 00001000
+I (82) boot:  3 ota_0            OTA app          00 10 00020000 003f0000
+I (89) boot:  4 ota_1            OTA app          00 11 00410000 003f0000
+I (95) boot:  5 model            Unknown data     01 82 00800000 00010000
+I (102) boot:  6 coco_pose        Unknown data     01 40 00810000 00320000
+I (109) boot:  7 spiffs_data      Unknown data     01 82 00b30000 00100000
+I (115) boot:  8 lvgl             Unknown data     01 82 00c30000 00300000
+I (122) boot: End of partition table
+I (450) boot: Loaded app from partition at offset 0x20000
+I (450) boot: Disabling RNG early entropy source...
+I (646) app_init: Application information:
+I (646) app_init: Project name:     xiaoling_11885
+I (651) app_init: App version:      3.1.2-silent-controls
+I (656) app_init: Compile time:     Nov  1 2026 11:12:35
+I (661) app_init: ELF file SHA256:  2d1c89211...
+I (665) app_init: ESP-IDF:          bebdc8020
+I (753) main_task: Started on CPU0
+E (846) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (848) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+[000151]<E> camera early init failed
+[000228]<E> system KV get failed ret=-1 key=volume key_len=6
+[000233]<I> qm_audio ready, opus 20ms
+[000338]<E> system KV get failed ret=-1 key=course_cfg key_len=10
+[000353]<E> system KV get failed ret=-1 key=cloud/pair_once key_len=15
+[000360]<I> saved Wi-Fi: reconnect automatically
+I (1076) wifi:wifi driver task: 3fcdfdf0, prio:23, stack:6144, core=0
+I (1081) wifi:wifi firmware version: 79fa3f41ba
+I (1089) wifi:config NVS flash: disabled
+I (1093) wifi:config nano formatting: enabled
+I (1097) wifi:Init data frame dynamic rx buffer num: 32
+I (1102) wifi:Init static rx mgmt buffer num: 5
+I (1106) wifi:Init management short buffer num: 32
+I (1111) wifi:Init static tx buffer num: 8
+I (1115) wifi:Init tx cache buffer num: 32
+I (1118) wifi:Init static tx FG buffer num: 2
+I (1122) wifi:Init static rx buffer size: 1600
+I (1127) wifi:Init static rx buffer num: 10
+I (1130) wifi:Init dynamic rx buffer num: 32
+I (1135) wifi_init: rx ba win: 12
+I (1138) wifi_init: accept mbox: 6
+I (1141) wifi_init: tcpip mbox: 32
+I (1144) wifi_init: udp mbox: 16
+I (1147) wifi_init: tcp mbox: 6
+I (1150) wifi_init: tcp tx win: 5760
+I (1153) wifi_init: tcp rx win: 5760
+I (1156) wifi_init: tcp mss: 1440
+I (1159) wifi_init: WiFi/LWIP prefer SPIRAM
+I (1163) wifi_init: WiFi IRAM OP enabled
+I (1167) wifi_init: WiFi RX IRAM OP enabled
+I (1171) wifi_init: LWIP IRAM OP enabled
+I (1222) wifi:mode : sta (68:ee:8f:44:b6:d0)
+I (1222) wifi:enable tsf
+[000520]<I> wifi sta start
+[000521]<I> state idle -> ready
+[000524]<I> session created state=ready
+I (1230) main_task: Returned from app_main()
+I (2014) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[001339]<I> opus ready 16000 Hz mono 20 ms frame=640 bytes
+I (2056) wifi:state: assoc -> run (0x10)
+I (2079) wifi:connected with [redacted], aid = 15, channel 6, BW20, bssid = [redacted]
+I (2079) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (2081) wifi:pm start, type: 1
+I (2084) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2092) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (2102) wifi:<ba-add>idx:0 (ifx:0, 22:01:be:a7:12:1d), tid:4, ssn:1488, winSize:64
+I (2114) wifi:<ba-add>idx:1 (ifx:0, 22:01:be:a7:12:1d), tid:6, ssn:2508, winSize:64
+I (2162) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (2374) wifi:<ba-del>idx:0, tid:4
+I (2375) wifi:<ba-add>idx:0 (ifx:0, 22:01:be:a7:12:1d), tid:0, ssn:1667, winSize:64
+[002418]<I> wifi got ip
+I (3121) wifi:Set ps type: 0, coexist: 0
+[003266]<I> reset marker already clear
+[003285]<I> cloud connecting
+[003310]<I> iot start ok
+I (5127) wifi:mode : sta (68:ee:8f:44:b6:d0) + softAP (68:ee:8f:44:b6:d1)
+I (5127) wifi:Total power save buffer number: 4
+I (5127) wifi:Init max length of beacon: 752/752
+I (5131) wifi:Init max length of beacon: 752/752
+I (5136) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (5318) wifi:Total power save buffer number: 4
+I (5320) fresh_http: preview :80, control :81 ready
+[004617]<W> preview start failed; cloud retained
+I (5320) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+[005106]<I> cloud connected
+[005120]<I> state ready -> starting
+[005791]<I> agora_rtc_create_connection ret=0 conn_id=1
+[005928]<I> agora connected; online ASR wake standby
+W (21025) httpd_txrx: httpd_sock_err: error in recv : 104
+W (21030) httpd_txrx: httpd_sock_err: error in recv : 104
+[023810]<I> dialog=listening
+I (24624) tracker_dialog: chat voice enabled
+[024017]<I> asr final=0 text=[redacted]
+[024051]<I> asr final=0 text=[redacted]
+[024735]<I> asr final=0 text=[redacted]
+[024931]<I> asr final=1 text=[redacted]
+[024931]<I> dialog=thinking
+[026929]<I> dialog=speaking
+[027050]<I> tts playback started generation=6
+[027191]<I> tts final=0 text=[redacted]
+[029134]<I> dialog=silent
+[029145]<E> tts playback failed generation=6 code=-6
+[029145]<W> tts playback failed while waiting code=-6
+[029150]<W> tts playback ended with error code=-6; continue resource handoff
+I (29860) tracker_dialog: local reply ret=0
+[032779]<I> dialog=listening
+[032973]<I> asr final=0 text=[redacted]
+[033011]<I> asr final=0 text=[redacted]
+[033694]<I> asr final=0 text=[redacted]
+I (34886) tracker_dialog: route=cloud_chat turn=3 audio_allowed=1
+[034184]<I> asr final=1 text=[redacted]
+[034189]<I> dialog=thinking
+[035100]<I> dialog=speaking
+[035125]<I> tts final=0 text=[redacted]
+[035189]<I> tts playback started generation=9
+[036192]<I> tts final=0 text=[redacted]
+[036886]<I> tts final=0 text=[redacted]
+[037387]<I> tts final=0 text=[redacted]
+[038083]<I> tts final=0 text=[redacted]
+[045518]<I> dialog=silent

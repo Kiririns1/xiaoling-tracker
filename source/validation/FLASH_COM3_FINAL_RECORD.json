@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-01T10:05:33.362887",
+  "version": "3.1.0-posture-ljyd",
+  "port": "COM3",
+  "pid": 11885,
+  "action": "flashfull",
+  "chip": "ESP32-S3 rev0.2, 16MB flash, 8MB PSRAM",
+  "previous_layout": "Arduino partition table at 0x8000; complete five-image layout migration required; old Wi-Fi is not carried over automatically",
+  "whole_chip_erase": false,
+  "verified_images": 5,
+  "firmware_sha256": "2f9eb18d49ca8774920fcd8a9ce9be87721938169c488bca657bf904aad21228",
+  "backup": "backups/COM3_before_FINAL_20261101.bin",
+  "backup_sha256": "1d67be1464a5a3df261dcfea37808927f9e3d2c77fd87dad9856f8f8cc5e0440",
+  "boot": {
+    "version": true,
+    "audio_ready": true,
+    "cloud_connected": false,
+    "agora_connected": false,
+    "http_ready": false,
+    "camera_frames": false,
+    "crash": false,
+    "provisioning": true,
+    "saved_wifi": false,
+    "ip_addresses": [],
+    "observed_seconds": 60,
+    "serial_closed": true
+  },
+  "serial_closed": true
+}
